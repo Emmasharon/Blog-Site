@@ -4,6 +4,7 @@ from . import main
 from .forms import UpdateProfile,PostAblog,PostAComment
 from .. import db
 from ..models import User,Blog,Comment
+from ..requests import get_quotes
 
 # Views
 @main.route('/')
@@ -14,8 +15,9 @@ def index():
     '''
 
     title = 'Home'
+    quotes = get_quotes()
 
-    return render_template('index.html', title = title )
+    return render_template('index.html', title = title, quotes=quotes )
 
 @main.route('/account/<uname>',methods=['GET','POST'])
 @login_required
@@ -60,7 +62,7 @@ def blog():
         
         form = PostAblog()
         if form.validate_on_submit():
-            new_blog = blog(upvotes=0,downvotes=0,title=form.title.data,content=form.content.data,user_id=current_user.id)
+            new_blog = Blog(title=form.title.data, content=form.content.data, user_id=current_user.id)
             new_blog.save_blog()
             return redirect(url_for('main.blog'))
         blogs= Blog.get_blogs()
@@ -68,7 +70,7 @@ def blog():
 
         return render_template('blogs.html',blogs=blogs,users=users, form=form )
 
-@main.route('/comment/<uname>')
+@main.route('/comment')
 def comment():
 
     '''
