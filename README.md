@@ -1,8 +1,8 @@
 # Flask template
-#### i am a Bloggy
+#### Hey! I am a Bloggy
 
 ## Description
-I am a template to be used to develop flask application ready for production. 
+This is a flask application for blogging. Users have to sign up to blog and view blogs. A quotes app is used to display random on the home page.
 
 #### Link to deployed site
 ....
