@@ -38,8 +38,8 @@ class Blog(db.Model):
     __tablename__ = 'blogs'
 
     id = db.Column(db.Integer,primary_key = True)
-    upvotes = db.Column(db.Integer)
-    downvotes = db.Column(db.Integer)
+    # upvotes = db.Column(db.Integer)
+    # downvotes = db.Column(db.Integer)
     title = db.Column(db.String)
     content = db.Column(db.String)
     posted = db.Column(db.DateTime,default=datetime.utcnow)
