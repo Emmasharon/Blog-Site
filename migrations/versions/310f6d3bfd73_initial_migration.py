@@ -1,8 +1,8 @@
 """Initial Migration
 
-Revision ID: 58b0a0496c41
+Revision ID: 310f6d3bfd73
 Revises: 
-Create Date: 2019-07-08 01:59:17.905887
+Create Date: 2019-07-09 16:12:23.729754
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '58b0a0496c41'
+revision = '310f6d3bfd73'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -30,8 +30,6 @@ def upgrade():
     op.create_index(op.f('ix_users_email'), 'users', ['email'], unique=True)
     op.create_table('blogs',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('upvotes', sa.Integer(), nullable=True),
-    sa.Column('downvotes', sa.Integer(), nullable=True),
     sa.Column('title', sa.String(), nullable=True),
     sa.Column('content', sa.String(), nullable=True),
     sa.Column('posted', sa.DateTime(), nullable=True),
