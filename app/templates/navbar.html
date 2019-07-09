@@ -2,9 +2,9 @@
 
 <!-- Navbar block -->
 {% block navbar %}
-    <div class="container">
+    <div class="container-fluid ">
 
-        <div class="navbar navbar-inverse" role="navigation" >
+        <div class="navbar navbar-inverse near-moon-gradient" role="navigation" >
 
             <div class="container">
 
@@ -19,31 +19,30 @@
 
                     </button>
 
-                    <p class="navbar-brand">Bloggy</p>
 
                 </div>
 
                 <div class="navbar-collapse collapse">
 
-                    <ul class="nav navbar-nav">
+                    <ul  class="nav navbar-nav">
 
                         <li>
-                            <a href="/">Home</a>
+                            <a style="color: black" href="/">Home</a>
                         </li>
                         <li>
-                            <a href="/blogs">Blogs</a>
+                            <a style="color: black" href="/blogs">Blogs</a>
                         </li>
                         
                         {% if current_user.is_authenticated %}
                         <li>
-                            <a href="{{url_for('main.account',uname=current_user.username)}}">Account</a>
+                            <a style="color: black" href="{{url_for('main.account',uname=current_user.username)}}">Account</a>
                         </li>
                         <li>
-                            <a href="{{url_for('auth.logout')}}">Log out</a>
+                            <a style="color: black" href="{{url_for('auth.logout')}}">Log out</a>
                         </li>
                         {% else %}
                         <li>
-                            <a href="{{url_for('auth.login')}}">Log in</a>
+                            <a style="color: black" href="{{url_for('auth.login')}}">Log in</a>
                         </li>
                         {%endif%}
                     </ul>
