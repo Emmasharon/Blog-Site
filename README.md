@@ -15,6 +15,12 @@ This is a flask application for blogging. Users have to sign up to blog and view
 5. [Contact me](#support-and-contact-details)
 6. [Licensing](#license)
 
+## BDD
+| Behavior           | Input                 | Outcome                            |
+| -------------------|-----------------------| -----------------------------------|
+| request page       | click horuku link url | view other blogs          |
+| click on a pitch   |                       | vote/comment                       |
+| sign in/up         | details pass & user   | view,blog & comment               |
 
 ## Setup and installations
 
@@ -56,7 +62,7 @@ source virtual/bin/activate
 #### Setting up environment variables
 Create a `.env` file and paste paste the following filling where appropriate:
 ```
-SECRET_KEY='<Secret_key>'
+SECRET_KEY='qwerty12345'
 DEBUG=True
 ```
 
@@ -80,7 +86,7 @@ Open [localhost:5000](http://127.0.0.1:5000/)
 Please read this [comprehensive guide](https://opensource.guide/how-to-contribute/) on how to contribute. Pull requests are welcome :-)
 
 ## Bugs
-Create an issue mentioning the bug you have found
+None
 
 #### Known bugs
  - N/A
@@ -91,6 +97,10 @@ Create an issue mentioning the bug you have found
 Contact [Emmasharon](emmasharon19@gmail.com) for further help/support
 
 ### License
-MIT
+
+The project is licensed under MIT license https://opensource.org/licenses/MIT
+Copyright (c) 2019, emma
+Emmasharon/Blog-Site
+
 
 Copyright (c)2018 **Emmasharon**
