@@ -46,18 +46,6 @@
             </div>
         </div>
         <div class="row">
-                <div class="col-md-4">
-                    <p>Posts</p>
-                    <p>0</p>
-                </div>
-                <div class="col-md-4">
-                    <p>Following</p>
-                    <p>0</p>
-                </div>
-                <div class="col-md-4">
-                    <p>Followers</p>
-                    <p>0</p>
-                </div>
                 <div class="col-md-1">
                     <a class="btn btn-lg" href="/user/{{user.username}}/update.html" role="button" >Edit Profile</a>
                 </div>
@@ -75,17 +63,6 @@
                     {% endif %}
                 </div>
                 <div class="col-md-6" id="myposts">
-                    <div class="row" >
-                        <div class="col-md-4">
-                            <a >My Posts</a>
-                        </div>
-                        <div class="col-md-4">
-                            <a >Liked Posts</a>
-                        </div>
-                        <div class="col-md-4">
-                            <a>Posts & Comments</a>
-                        </div>
-                    </div>
                     {% for blog in blogs %}
                         {% if blog.user_id == current_user.id %}
             <div class="row">
