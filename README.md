@@ -5,7 +5,7 @@
 This is a flask application for blogging. Users have to sign up to blog and view blogs. A quotes app is used to display random on the home page.
 
 #### Link to deployed site
-....
+https://bloggy254.herokuapp.com/
 
 ## Table of content
 1. [Description](#description)
