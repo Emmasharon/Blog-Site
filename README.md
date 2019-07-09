@@ -15,6 +15,12 @@ This is a flask application for blogging. Users have to sign up to blog and view
 5. [Contact me](#support-and-contact-details)
 6. [Licensing](#license)
 
+## BDD
+| Behavior           | Input                 | Outcome                            |
+| -------------------|-----------------------| -----------------------------------|
+| request page       | click horuku link url | view other blogs          |
+| click on a pitch   |                       | vote/comment                       |
+| sign in/up         | details pass & user   | view,blog & comment               |
 
 ## Setup and installations
 
@@ -91,6 +97,10 @@ None
 Contact [Emmasharon](emmasharon19@gmail.com) for further help/support
 
 ### License
-MIT
+
+The project is licensed under MIT license https://opensource.org/licenses/MIT
+Copyright (c) 2019, emma
+Emmasharon/Blog-Site
+
 
 Copyright (c)2018 **Emmasharon**
