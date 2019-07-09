@@ -56,7 +56,7 @@ source virtual/bin/activate
 #### Setting up environment variables
 Create a `.env` file and paste paste the following filling where appropriate:
 ```
-SECRET_KEY='<Secret_key>'
+SECRET_KEY='qwerty12345'
 DEBUG=True
 ```
 
@@ -80,7 +80,7 @@ Open [localhost:5000](http://127.0.0.1:5000/)
 Please read this [comprehensive guide](https://opensource.guide/how-to-contribute/) on how to contribute. Pull requests are welcome :-)
 
 ## Bugs
-Create an issue mentioning the bug you have found
+None
 
 #### Known bugs
  - N/A
